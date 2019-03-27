@@ -1,0 +1,9 @@
+.logo_center {
+  position: absolute;
+  left: 0;
+  top: 220px;
+  right: 0;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,107 @@
+/** 
+CSS DESKTOP 
+**/
+
+
+/*** GENERAL ***/
+@font-face {
+  font-family: "GothamRounded-Book";
+  src: url("../../both/assets/font/GothamRounded-Book.otf");
+ }
+ @font-face {
+  font-family: "GothamRounded-Light";
+  src: url("../../both/assets/font/GothamRounded-Light.otf");
+ }
+
+* {
+  font-family: "GothamRounded-Light", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: "GothamRounded-Book", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+}
+
+button {
+  font-family: "GothamRounded-Book", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background: none;
+  border: none;
+  background-image: url(../../both/assets/img/button.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px 50px 40px 50px;
+  cursor: pointer;
+}
+
+
+
+/**************************  
+**************************  SECTION 1
+**************************/
+
+.logo_center {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  right: 0;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo_center img {
+  width: 310px;
+}
+
+
+
+/**************************  
+**************************  SECTION 2
+**************************/
+
+.logo_top_left {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 90px;
+
+  opacity: 0;
+
+  transition: all 2s ease;
+}
+
+#intro .intro {
+  max-width: 750px;
+  height: 30%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  line-height: 25px;
+}
+
+#intro .intro p {
+  margin: 35px 0;
+}
+
+
+
+/**************************  
+**************************  SECTION 3
+**************************/
+
+section{
+  transition: 0.8s all ease;
+}
+
+.out{
+  opacity: 0;
+}
+
+.in{
+  opacity: 1;
+}

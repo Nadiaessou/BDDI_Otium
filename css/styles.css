@@ -1,9 +1,125 @@
+/** 
+CSS DESKTOP 
+**/
+
+
+/*** GENERAL ***/
+@font-face {
+  font-family: "GothamRounded-Book";
+  src: url("../font/GothamRounded-Book.otf");
+ }
+ @font-face {
+  font-family: "GothamRounded-Light";
+  src: url("../font/GothamRounded-Light.otf");
+ }
+
+* {
+  font-family: "GothamRounded-Light", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: "GothamRounded-Book", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+}
+
+button {
+  font-family: "GothamRounded-Book", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background: none;
+  border: none;
+  background-image: url(../img/button.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px 50px 40px 50px;
+  cursor: pointer;
+}
+
+
+
+/**************************  
+**************************  SECTION 1
+**************************/
+#section1 {
+  opacity: 0;
+  animation: fondu_logo_center 4s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fondu_logo_center{
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .logo_center {
   position: absolute;
   left: 0;
-  top: 220px;
+  top: 25%;
   right: 0;
   height: 40%;
   display: flex;
   justify-content: center;
 }
+
+.logo_center img {
+  width: 310px;
+}
+
+
+
+/**************************  
+**************************  SECTION 2
+**************************/
+#section2{
+  animation: section1 3s forwards;
+  animation-delay: 5s;
+  opacity: 0;
+}
+
+#section2 .logo_top_left {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 90px;
+}
+
+@keyframes section1{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#section2 .intro {
+  max-width: 750px;
+  height: 30%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  line-height: 25px;
+}
+
+#section2 .intro p {
+  margin: 35px 0;
+}
+
+
+
+/**************************  
+**************************  SECTION 3
+**************************/
